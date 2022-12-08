@@ -18,8 +18,10 @@ const Quiz = () => {
 
   const currentQuestion = questions[currentQuestionIndex]
 
-  if(status === 'loading') {
-    return <span className="loader"></span>
+  console.log(status)
+
+  if (status === 'loading') {
+    return <span className='loader'></span>
   }
 
   if (status === 'succeeded') {
@@ -65,12 +67,7 @@ const Quiz = () => {
         )}
       </div>
     )
-  } 
-
-  if(status === 'failed') {
-    return <h1>wqeq</h1>
   }
-  
 }
 
 export default Quiz

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const QUESTIONS_URL = 'http://localhost:5000/api/questions'
+const QUESTIONS_URL = 'https://nice-jade-mussel-vest.cyclic.app/api/questions'
 
 export const fetchQuestions = createAsyncThunk('api/questions', async () => {
   try {
